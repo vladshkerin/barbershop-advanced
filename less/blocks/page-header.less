@@ -9,11 +9,24 @@
 
 
 @media (min-width: @tablet-width) {
-  .page-header__logo }
+  .page-header__logo {
+    order: 2;
+    height: 400px;
+  }
+}
 
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
     height: 648px;
   }
+}
+
+.page-header,
+.page-header__logo {
+  .no-outline();
+}
+
+.page-header__logo {
+  background: rgba(255, 255, 255, 0.5);
 }
