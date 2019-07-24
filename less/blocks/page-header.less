@@ -1,3 +1,4 @@
+/* Файл blocks/page-header.less */
 .page-header {
   display: flex;
   flex-direction: column;
@@ -22,7 +23,7 @@
     background-color: #000000;
   }
 
-  .page-header__logo {
+  .page-header__logo{
     order: 2;
 
     width: 100%;
@@ -57,29 +58,5 @@
   .page-header__logo img {
     margin-top: 57px;
   }
-}
 
-
-
-/* Стили для nav-mock */
-
-.nav-mock {
-  min-height: 310px;
-}
-
-
-
-@media (min-width: @tablet-width) {
-
-  .nav-mock {
-    min-height: 72px;
-  }
-}
-
-
-
-/*  Блок-заглушка снизу */
-
-.block-mock:nth-last-of-type(1) {
-  .mock(400px);
 }
