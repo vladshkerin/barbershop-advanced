@@ -1,13 +1,4 @@
 /* Файл mixins.less */
-.no-outline() {
-  outline: none;
-  background: transparent;
-
-  &::before {
-    display: none;
-  }
-}
-
 .mock (@height: 100px, @bg: rgba(255, 255, 255, 0.10), @wavesOpacity: 0.5) {
   height: @height;
 
@@ -16,4 +7,9 @@
   background-position: 25px 0, 25px 0, 0 0, 0 0;
   background-size: 50px 50px;
   background-repeat: repeat;
+}
+
+/*  Блок-заглушка снизу */
+.block-mock:nth-last-of-type(1) {
+  .mock(400px);
 }
