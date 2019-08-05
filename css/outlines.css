@@ -165,7 +165,6 @@ body > * > * > * > * > *::before {
 }
 
 @media (min-width: 768px) {
-@media (min-width: 768px) {
   .page-footer__copyright::before {
     font-size: 10px;
   }
